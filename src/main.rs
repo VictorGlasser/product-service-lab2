@@ -32,7 +32,7 @@ async fn main() {
         })
         .with(cors); // Apply the CORS filter to this route to allow cross-origin requests.
 
-    // Start the web server using the port from environment variables or defaults.
-    // The server will listen for incoming requests and route them to the "/products" path.
+    //  Start the web server using the port from environment variables or defaults.
+    //  The server will listen for incoming requests and route them to the "/products" path.
     warp::serve(products).run(([0, 0, 0, 0], port)).await; // Await the server to ensure it's running asynchronously.
 }
